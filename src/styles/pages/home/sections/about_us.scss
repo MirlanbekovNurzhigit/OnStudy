@@ -1,0 +1,18 @@
+.about_us {
+	.box__flex {
+		padding: 96px 0 107px;
+		display: flex;
+		justify-content: space-between;
+		align-items: start;
+
+		.about_us__title {
+			font-size: 64px;
+			color: #AA37F5;
+		}
+
+		.about_us__text {
+			font-size: 36px;
+			width: 1000px;
+		}
+	}
+}

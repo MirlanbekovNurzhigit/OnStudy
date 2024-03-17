@@ -1,0 +1,17 @@
+.choice {
+	.choice__title {
+		font-size: 64px;
+		color: #AA37F5;
+		margin-bottom: 40px;
+	}
+
+	.box__flex {
+		display: flex;
+		column-gap: 40px;
+		margin-bottom: 65px;
+
+		.choice__text {
+			font-size: 27px;
+		}
+	}
+}

@@ -1,0 +1,16 @@
+.footer {
+	.footer__box {
+		display: flex;
+		justify-content: space-between;
+		margin: 150px 0 100px;
+
+		.footer__text {
+			font-size: 24px;
+		}
+
+		.social__links {
+			display: flex;
+			column-gap: 30px;
+		}
+	}
+}

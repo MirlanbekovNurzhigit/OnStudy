@@ -1,0 +1,32 @@
+.login {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	// margin-top: 117px;
+
+	.form {
+		width: 550px;
+		height: 700px;
+		background: #272727;
+
+		.login__title {
+			font-size: 36px;
+			color: #724CF9;
+		}
+
+		.input__box {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			row-gap: 20px;
+
+			.login__inpot {
+				width: 424px;
+				height: 57px;
+				background: #fff;
+				border: solid #d3d3d3;
+			}
+		}
+	}
+}

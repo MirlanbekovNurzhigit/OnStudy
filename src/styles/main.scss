@@ -1,0 +1,17 @@
+.app-main {
+	overflow: hidden;
+
+	.circles {
+		position: relative;
+
+		.small__circle {
+			display: none;
+			position: absolute;
+			width: 953.36px;
+			height: 953.36px;
+			background: #AA37F5;
+			border-radius: 50%;
+		}
+
+	}
+}
