@@ -1,4 +1,4 @@
-import '../../../styles/pages/home/sections/statistics.scss'
+import '../../../styles/pages/home/sections/statistics/statistics.scss'
 
 function Statistics() {
 	return (

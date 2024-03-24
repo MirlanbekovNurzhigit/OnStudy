@@ -1,4 +1,4 @@
-import '../../../styles/pages/courses/sections/free-courses.scss'
+import '../../../styles/pages/courses/sections/free-courses/free-courses.scss'
 
 function Free_courses() {
 	return (

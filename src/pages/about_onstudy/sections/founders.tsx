@@ -1,4 +1,4 @@
-import '../../../styles/pages/about_onstudy/sections/found.scss'
+import '../../../styles/pages/about_onstudy/sections/found/found.scss'
 
 
 function Founders() {

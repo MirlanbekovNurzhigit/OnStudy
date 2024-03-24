@@ -1,0 +1,29 @@
+.course__card {
+	width: 548px;
+	height: 236px;
+	background: #8844F7;
+	padding: 21px 33px;
+
+	.box {
+		display: flex;
+		justify-content: space-between;
+
+		.course__box-card-left {
+			.course__text {
+				color: #BD97FB;
+				font-size: 24px;
+			}
+
+			.course__name {
+				color: #4A16A1;
+				font-size: 36px;
+				margin: 13px 0 94px;
+			}
+
+			.price {
+				color: #BD97FB;
+				font-size: 16px;
+			}
+		}
+	}
+}

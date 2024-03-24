@@ -1,4 +1,4 @@
-import '../../../styles/pages/home/sections/mentors.scss'
+import '../../../styles/pages/home/sections/mentors/mentors.scss'
 
 function Mentors() {
 	return (

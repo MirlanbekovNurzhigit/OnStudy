@@ -1,4 +1,4 @@
-import '../../../styles/pages/home/sections/choice.scss'
+import '../../../styles/pages/home/sections/choice/choice.scss'
 
 function Choice() {
 	return (

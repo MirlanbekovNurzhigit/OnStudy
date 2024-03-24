@@ -1,4 +1,4 @@
-import '../../../styles/pages/home/sections/about_us.scss'
+import '../../../styles/pages/home/sections/about-us/about-us.scss'
 
 function About_us() {
 	return (

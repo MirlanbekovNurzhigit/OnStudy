@@ -6,12 +6,13 @@ import Courses from './pages/courses/courses';
 import { Routes, Route } from 'react-router-dom'
 import Login from './pages/login/login';
 import Singin from './pages/singin/singin';
+import Firstsingin from './pages/singin/firstsingin';
 import './styles/main.scss'
 
 function App() {
 	return (
 		<div className='app-main'>
-			{/* <Header /> */}
+			<Header />
 
 			{/* <div className="circles">
 				<div className="small__circle"></div>
@@ -25,10 +26,11 @@ function App() {
 				<Route path="/about-OnStudy" element={<About_onstudy />} />
 				<Route path="/courses" element={<Courses />} />
 				<Route path="/login" element={<Login />} />
+				<Route path="/firstsingin" element={<Firstsingin />} />
 				<Route path="/singin" element={<Singin />} />
 			</Routes>
 
-			{/* <Footer /> */}
+			<Footer />
 		</div>
 	);
 }

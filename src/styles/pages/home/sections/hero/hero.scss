@@ -1,5 +1,5 @@
 .hero {
-	padding: 250px 90px;
+	padding: calc(var(--index) * 100) calc(var(--index) * 30);
 	text-align: center;
 	background: #724CF9;
 	color: #fff;

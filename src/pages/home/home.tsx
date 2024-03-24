@@ -11,10 +11,10 @@ function Home() {
 		<main className='home__main'>
 			<Hero />
 			<About_us />
-			<Popelar_courses />
-			<Mentors />
-			<Choice />
 			<Statistics />
+			<Popelar_courses />
+			<Choice />
+			<Mentors />
 		</main>
 	);
 }

@@ -1,7 +1,7 @@
-.login__main {
+.firstsingin__main {
 	background: #724CF9;
 
-	.login {
+	.firstsingin {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -10,42 +10,27 @@
 
 		.form {
 			width: 550px;
-			height: 700px;
+			height: 634px;
 			background: #fff;
 			padding: 47px 63px 53px;
 
-			.login__title {
+			.firstsingin__title {
 				text-align: center;
 				font-size: 36px;
 				color: #724CF9;
 			}
 
-			.input__box {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: center;
-				row-gap: 16px;
-				margin-top: 56px;
-
-				.login__inpot {
-					width: 424px;
-					height: 57px;
-					background: #fff;
-					border: 1px solid #d3d3d3;
-					padding: 0 10px 0 20px;
-					font-size: 24px;
-				}
+			.firstsingin__inpot {
+				width: 424px;
+				height: 57px;
+				background: #fff;
+				border: 1px solid #d3d3d3;
+				padding: 0 10px 0 20px;
+				font-size: 24px;
+				margin: 88px 0 16px;
 			}
 
-			.forgot {
-				color: #000;
-				font-size: 16px;
-				display: block;
-				text-decoration-line: underline;
-				margin: 22px 0;
-			}
-
-			.login__button {
+			.firstsingin__button {
 				width: 424px;
 				height: 57px;
 				background: #D9D9D980;
@@ -58,11 +43,11 @@
 				border: 1px solid #D9D9D980;
 			}
 
-			.loginby {
+			.singinby {
 				font-size: 14px;
 				line-height: 14px;
 				text-align: center;
-				margin: 24px 0;
+				margin: 28px 0 30px;
 			}
 
 			.bysocial {
@@ -70,6 +55,7 @@
 				column-gap: 15px;
 				justify-content: center;
 				align-items: center;
+				margin-bottom: 30px;
 
 				.social {
 					width: 48px;
@@ -77,6 +63,10 @@
 					border-radius: 50%;
 					border: 1px solid #E8E8E8;
 				}
+			}
+
+			.haveaccaunt {
+				text-align: center;
 			}
 		}
 	}

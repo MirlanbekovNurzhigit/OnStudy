@@ -20,32 +20,69 @@
 } */
 
 /* Fonts */
+/* Grafie */
 
-/* @font-face {
-	font-family: Dela_Gothic_One_f;
-	src: url(/libs/Dela_Gothic_One/DelaGothicOne-Regular.ttf);
+@font-face {
+	font-family: Grafier_Black_OnStudy;
+	src: url(../font/grafier/grafier-Black.otf);
 }
 
 @font-face {
-	font-family: Nunito_f;
-	src: url(/libs/Nunito/Nunito-VariableFont_wght.ttf);
-} */
+	font-family: Grafier_BlackDisplay_OnStudy;
+	src: url(../font/grafier/grafier-BlackDisplay.otf);
+}
+
+._logo_latin-Black {
+	font-family: Grafier_Black_OnStudy, sans-serif;
+	color: #fff;
+}
+
+._logo_latin-BlackDisplay {
+	font-family: Grafier_BlackDisplay_OnStudy, sans-serif;
+	color: #fff;
+}
+
+/* RightSans */
+
+@font-face {
+	font-family: RightSans_Medium_OnStudy;
+	src: url(../font/right-sans/rightSans-Medium.otf);
+}
+
+@font-face {
+	font-family: RightSans_Light_OnStudy;
+	src: url(../font/right-sans/rightSans-Light.otf);
+}
+
+@font-face {
+	font-family: RightSans_CompactBlack_OnStudy;
+	src: url(../font/right-sans/rightSans-CompactBlack.otf);
+}
+
+@font-face {
+	font-family: RightSans_WideMedium_OnStudy;
+	src: url(../font/right-sans/rightSans-WideMedium.otf);
+}
+
+body {
+	font-family: RightSans_Medium_OnStudy, sans-serif;
+}
 
 /* scrollbar */
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
 	width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-	background: var(--black);
+	background: #fff;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: var(--green);
+	background: #724CF9;
 }
 
-.selection__h1::selection {
+/* .selection__h1::selection {
 	background-color: var(--green);
 	color: var(--black);
 }
@@ -62,25 +99,25 @@ img::selection {
 
 /* Bg color */
 
-/* body {
-	color: var(--white);
-	background: var(--black);
+body {
+	/* color: #fff;
+	background: var(--black); */
 	overflow-x: hidden;
-} */
+}
 
 /* Containers */
 
 .container {
-	width: calc(var(--index) * 45);
-	margin: 0 auto;
-}
-
-/* .container-header {
 	width: calc(var(--index) * 55);
 	margin: 0 auto;
 }
 
-.container-projects {
+.container-header {
+	width: calc(var(--index) * 60);
+	margin: 0 auto;
+}
+
+/*.container-projects {
 	width: calc(var(--index) * 50);
 	margin: 0 auto;
 }

@@ -1,7 +1,7 @@
-.login__main {
+.singin__main {
 	background: #724CF9;
 
-	.login {
+	.singin {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -10,11 +10,11 @@
 
 		.form {
 			width: 550px;
-			height: 700px;
+			height: 774px;
 			background: #fff;
 			padding: 47px 63px 53px;
 
-			.login__title {
+			.singin__title {
 				text-align: center;
 				font-size: 36px;
 				color: #724CF9;
@@ -25,9 +25,9 @@
 				flex-wrap: wrap;
 				justify-content: center;
 				row-gap: 16px;
-				margin-top: 56px;
+				margin: 86px 0 35px;
 
-				.login__inpot {
+				.singin__inpot {
 					width: 424px;
 					height: 57px;
 					background: #fff;
@@ -45,37 +45,25 @@
 				margin: 22px 0;
 			}
 
-			.login__button {
+			.singin__button {
 				width: 424px;
 				height: 57px;
 				background: #D9D9D980;
 				margin-bottom: 16px;
 			}
 
-			.button {
-				width: 424px;
-				height: 57px;
-				border: 1px solid #D9D9D980;
-			}
-
-			.loginby {
+			.offer {
 				font-size: 14px;
 				line-height: 14px;
-				text-align: center;
-				margin: 24px 0;
+				margin: 10px 0 30px;
 			}
 
-			.bysocial {
-				display: flex;
-				column-gap: 15px;
-				justify-content: center;
-				align-items: center;
+			.haveaccaunt {
+				text-align: center;
 
-				.social {
-					width: 48px;
-					height: 48px;
-					border-radius: 50%;
-					border: 1px solid #E8E8E8;
+				a {
+					color: #000;
+					text-decoration-line: underline;
 				}
 			}
 		}

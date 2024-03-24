@@ -1,4 +1,4 @@
-import '../../../styles/pages/courses/sections/all-courses.scss'
+import '../../../styles/pages/courses/sections/all-courses/all-courses.scss'
 
 function All_courses() {
 	return (

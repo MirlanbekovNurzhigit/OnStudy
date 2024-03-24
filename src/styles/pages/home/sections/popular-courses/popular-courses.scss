@@ -1,0 +1,35 @@
+.popular__courses {
+
+	padding-bottom: 85px;
+
+	.popular__courses-text-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: start;
+		margin: 100px 0 40px;
+
+		.popular__courses-title {
+			font-size: 64px;
+			color: #AA37F5;
+		}
+
+		.popular__courses-text {
+			width: 700px;
+			font-size: 36px;
+		}
+	}
+
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 15px 20px;
+
+		.col-6 {
+			width: 635px;
+			height: 400px;
+			background: #a0a0a0;
+		}
+	}
+
+
+}
