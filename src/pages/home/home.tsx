@@ -13,8 +13,9 @@ function Home() {
 			<About_us />
 			<Statistics />
 			<Popelar_courses />
-			<Choice />
+			{/* edit mentors */}
 			<Mentors />
+			<Choice />
 		</main>
 	);
 }

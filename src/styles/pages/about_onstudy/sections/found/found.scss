@@ -1,8 +1,8 @@
 .founders {
 	.founders__title {
-		font-size: 64px;
+		font-size: calc(var(--index) * 2.3);
 		color: #AA37F5;
-		margin-bottom: 40px;
+		margin-bottom: calc(var(--index) * .9);
 	}
 
 	.row {

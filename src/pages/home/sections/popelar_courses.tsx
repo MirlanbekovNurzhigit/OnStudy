@@ -1,4 +1,5 @@
 import '../../../styles/pages/home/sections/popular-courses/popular-courses.scss'
+import CoursesCard from '../../../components/card-course'
 
 function Popular_courses() {
 	return (
@@ -12,10 +13,10 @@ function Popular_courses() {
 					</p>
 				</div>
 				<div className="row">
-					<div className="col-6">Card_course</div>
-					<div className="col-6"></div>
-					<div className="col-6"></div>
-					<div className="col-6"></div>
+					<CoursesCard />
+					<CoursesCard />
+					<CoursesCard />
+					<CoursesCard />
 				</div>
 			</div>
 		</section>

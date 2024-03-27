@@ -1,16 +1,16 @@
-.hero {
-	padding: calc(var(--index) * 100) calc(var(--index) * 30);
+.home__hero {
+	padding: calc(var(--index) * 11) 0 calc(var(--index) * 1);
 	text-align: center;
 	background: #724CF9;
 	color: #fff;
-	height: 958px;
+	height: 100vh;
 
 	.hero__title {
-		font-size: 300px;
-		padding-bottom: 30px;
+		font-size: calc(var(--index) * 10);
+		padding-bottom: calc(var(--index) * 1.2);
 	}
 
 	.hero__text {
-		font-size: 24px;
+		font-size: calc(var(--index) * 1.4);
 	}
 }

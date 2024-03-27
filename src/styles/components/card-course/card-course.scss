@@ -1,8 +1,8 @@
 .course__card {
-	width: 548px;
-	height: 236px;
+	width: calc(var(--index) * 17.869);
+	height: calc(var(--index) * 8.4);
 	background: #8844F7;
-	padding: 21px 33px;
+	padding: calc(var(--index) * .8) calc(var(--index) * 1.2);
 
 	.box {
 		display: flex;
@@ -11,18 +11,18 @@
 		.course__box-card-left {
 			.course__text {
 				color: #BD97FB;
-				font-size: 24px;
+				font-size: calc(var(--index) * .85);
 			}
 
 			.course__name {
 				color: #4A16A1;
-				font-size: 36px;
-				margin: 13px 0 94px;
+				font-size: calc(var(--index) * 1.35);
+				margin: calc(var(--index) * .4) 0 calc(var(--index) * 2.8);
 			}
 
 			.price {
 				color: #BD97FB;
-				font-size: 16px;
+				font-size: calc(var(--index) * .65);
 			}
 		}
 	}

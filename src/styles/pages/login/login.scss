@@ -14,6 +14,8 @@
 			background: #fff;
 			padding: 47px 63px 53px;
 
+			.logo {}
+
 			.login__title {
 				text-align: center;
 				font-size: 36px;
@@ -27,7 +29,7 @@
 				row-gap: 16px;
 				margin-top: 56px;
 
-				.login__inpot {
+				.login__input {
 					width: 424px;
 					height: 57px;
 					background: #fff;

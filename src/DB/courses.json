@@ -1,0 +1,26 @@
+{
+	"courses": [
+		{
+			"name": "SAT",
+			"image": "link", // only illustartor 32x32
+			"videocount": "23",
+			"videos": {
+				"IntroductoryPart": {
+					"first": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N",
+					"second": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N",
+					"third": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
+				},
+				"Practice": {
+					"first": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N",
+					"second": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N",
+					"third": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
+				},
+				"Conclusion": {
+					"first": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N",
+					"second": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N",
+					"third": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
+				}
+			}
+		}
+	]
+}

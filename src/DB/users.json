@@ -1,0 +1,14 @@
+{
+	"users": [
+		{
+			"name": "nurzhigit",
+			"email": "misterpusistyestany@gmail.com",
+			"password": "qwerty123456"
+		},
+		{
+			"name": "somebody",
+			"email": "somebody@yandex.ru",
+			"password": "222313131"
+		}
+	]
+}

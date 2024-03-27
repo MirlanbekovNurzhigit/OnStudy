@@ -7,9 +7,8 @@ function Singin() {
 			<section className='singin'>
 				<div className="form">
 					<form action="">
-						<div className="logo">
-							<img src="" alt="" />
-						</div>
+						<Link to="/firstsingin"><img className="arrow" src="" alt="arrow" /></Link>
+						<img className="logo" src="" alt="logo" />
 						<h2 className="singin__title">Регистрация</h2>
 						<div className="input__box">
 							<div className="input__block">

@@ -1,21 +1,15 @@
 .users_courses {
-	margin-top: 200px;
+	margin-top: calc(var(--index) * 7);
 
 	.users_courses-title {
-		font-size: 36px;
+		font-size: calc(var(--index) * 2.1);
 		color: #AF44F6;
 	}
 
 	.row {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 20px 20px;
-		margin: 20px 0 60px;
-
-		.col-4 {
-			width: 417px;
-			height: 236px;
-			background: #D9D9D9;
-		}
+		gap: calc(var(--index) * 1) calc(var(--index) * .68);
+		margin: calc(var(--index) * 2) 0 calc(var(--index) * 4);
 	}
 }

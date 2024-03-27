@@ -7,9 +7,8 @@ function Firstsingin() {
 			<section className='firstsingin'>
 				<div className="form">
 					<form action="">
-						<div className="logo">
-							<img src="" alt="" />
-						</div>
+						<Link to="/login"><img className="arrow" src="" alt="arrow" /></Link>
+						<img className="logo" src="" alt="logo" />
 						<h2 className="firstsingin__title">Регистрация</h2>
 						<div className="input__block">
 							<input className="firstsingin__inpot" type="email" placeholder="Электронная почта" required />

@@ -42,30 +42,21 @@
 	color: #fff;
 }
 
-/* RightSans */
+/* HandilPro */
 
 @font-face {
-	font-family: RightSans_Medium_OnStudy;
-	src: url(../font/right-sans/rightSans-Medium.otf);
+	font-family: Title_Font;
+	src: url(../font/commissioner/Commissioner-ExtraBold.ttf);
 }
 
 @font-face {
-	font-family: RightSans_Light_OnStudy;
-	src: url(../font/right-sans/rightSans-Light.otf);
+	font-family: Text_Font;
+	src: url(../font/commissioner/Commissioner-Regular.ttf);
 }
 
-@font-face {
-	font-family: RightSans_CompactBlack_OnStudy;
-	src: url(../font/right-sans/rightSans-CompactBlack.otf);
-}
-
-@font-face {
-	font-family: RightSans_WideMedium_OnStudy;
-	src: url(../font/right-sans/rightSans-WideMedium.otf);
-}
 
 body {
-	font-family: RightSans_Medium_OnStudy, sans-serif;
+	font-family: Text_Font, sans-serif;
 }
 
 /* scrollbar */
@@ -110,6 +101,7 @@ body {
 .container {
 	width: calc(var(--index) * 55);
 	margin: 0 auto;
+	background: #cacacadd;
 }
 
 .container-header {

@@ -1,4 +1,5 @@
 import '../../../styles/pages/about_onstudy/sections/found/found.scss'
+import Mentor_card from '../../../components/mentor-card';
 
 
 function Founders() {
@@ -7,9 +8,9 @@ function Founders() {
 			<div className="container">
 				<h2 className="founders__title">Основатели платформы</h2>
 				<div className="row">
-					<div className="col-4"></div>
-					<div className="col-4"></div>
-					<div className="col-4"></div>
+					<Mentor_card />
+					<Mentor_card />
+					<Mentor_card />
 				</div>
 			</div>
 		</section>
