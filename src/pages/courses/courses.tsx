@@ -1,4 +1,5 @@
 import '../../styles/pages/courses/courses.scss'
+import '../../styles/pages/courses/courses_media.css'
 import All_courses from './sections/all-courses';
 import Free_courses from './sections/free-courses';
 import Users_courses from './sections/users-courses';

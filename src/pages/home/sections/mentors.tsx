@@ -1,4 +1,6 @@
 import '../../../styles/pages/home/sections/mentors/mentors.scss'
+import '../../../styles/pages/home/sections/mentors/mentors_media.css'
+import Mentor_card from '../../../components/mentor-card';
 
 function Mentors() {
 	return (
@@ -11,10 +13,9 @@ function Mentors() {
 					</p>
 				</div>
 				<div className="row">
-					<div className="col-6"></div>
-					<div className="col-6"></div>
-					<div className="col-6"></div>
-					<div className="col-6"></div>
+					<Mentor_card />
+					<Mentor_card />
+					<Mentor_card />
 				</div>
 			</div>
 		</section>

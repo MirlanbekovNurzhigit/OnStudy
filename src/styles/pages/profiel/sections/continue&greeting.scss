@@ -1,0 +1,37 @@
+.continue__greeting {
+	margin: calc(var(--index) * 8) 0 calc(var(--index) * 3);
+
+	.row {
+		display: flex;
+		column-gap: 30px;
+
+		.greeting {
+			width: calc(var(--index) * 37);
+
+			.greeting__user {
+				font-size: calc(var(--index) * 2.3);
+			}
+
+			.greeting__text {
+				font-size: calc(var(--index) * .9);
+			}
+		}
+
+
+
+		.continue__watch {
+			width: 100%;
+			position: relative;
+
+			.continue__watch-slide {
+				width: calc(var(--index) * 10);
+
+				.continue__slide-img {
+					background: #000;
+					width: 100%;
+					height: calc(var(--index) * 5);
+				}
+			}
+		}
+	}
+}

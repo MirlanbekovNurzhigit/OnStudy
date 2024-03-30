@@ -1,4 +1,5 @@
 import '../../../styles/pages/home/sections/popular-courses/popular-courses.scss'
+import '../../../styles/pages/home/sections/popular-courses/popular-courses_media.css'
 import CoursesCard from '../../../components/card-course'
 
 function Popular_courses() {

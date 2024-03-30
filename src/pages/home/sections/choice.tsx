@@ -1,4 +1,5 @@
 import '../../../styles/pages/home/sections/choice/choice.scss'
+import '../../../styles/pages/home/sections/choice/choice_media.css'
 
 function Choice() {
 	return (

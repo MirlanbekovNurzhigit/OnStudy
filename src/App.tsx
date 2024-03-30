@@ -4,25 +4,42 @@ import Footer from './components/footer';
 import Home from './pages/home/home';
 import About_onstudy from './pages/about_onstudy/about_onstudy';
 import Courses from './pages/courses/courses';
-import Login from './pages/login/login';
-import Singin from './pages/singin/singin';
-import Firstsingin from './pages/singin/firstsingin';
+import Login from './pages/register&singin/login';
+import Register from './pages/register&singin/register';
+import Singin from './pages/register&singin/singin';
+import Profiel from './pages/profiel/profiel';
 import './styles/main.scss';
 
 function App() {
 	const location = useLocation();
 	const hideHeaderFooter = ['/login', '/firstsingin', '/singin'].includes(location.pathname);
-
+	const hideCircles = ['/courses'].includes(location.pathname);
 	return (
-		<div className='app-main'>
+		<div className="app__body">
 			{!hideHeaderFooter && <Header />}
+
+			{!hideCircles &&
+
+				<div className="circles">
+					<div className="bigger__big-circle"></div>
+					<div className="big__circle"></div>
+					<div className="bigger__small-circle"></div>
+					<div className="small__circle"></div>
+				</div>
+
+			}
 
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/about-OnStudy" element={<About_onstudy />} />
 				<Route path="/courses" element={<Courses />} />
+				<Route path="/user" element={<Profiel />} />
+
+				{/* will edit */}
 				<Route path="/login" element={<Login />} />
-				<Route path="/firstsingin" element={<Firstsingin />} />
+				<Route path="/firstsingin" element={<Register />} />
+
+				{/* will edit */}
 				<Route path="/singin" element={<Singin />} />
 			</Routes>
 

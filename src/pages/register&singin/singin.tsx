@@ -1,7 +1,8 @@
-import '../../styles/pages/singin/second/singin.scss'
+import '../../styles/pages/register&login/singin/singin.scss'
+import '../../styles/pages/register&login/singin/singin_media.css'
 import { Link } from 'react-router-dom';
 
-function Singin() {
+function SingIn() {
 	return (
 		<main className='singin__main'>
 			<section className='singin'>
@@ -12,16 +13,16 @@ function Singin() {
 						<h2 className="singin__title">Регистрация</h2>
 						<div className="input__box">
 							<div className="input__block">
-								<input className="singin__inpot" type="text" placeholder="Имя" required />
+								<input className="singin__input" type="text" placeholder="Имя" required />
 							</div>
 							<div className="input__block">
-								<input className="singin__inpot" type="text" placeholder="Фамилия" required />
+								<input className="singin__input" type="text" placeholder="Фамилия" required />
 							</div>
 							<div className="input__block">
-								<input className="singin__inpot" type="password" placeholder="Пароль" required />
+								<input className="singin__input" type="password" placeholder="Пароль" required />
 							</div>
 							<div className="input__block">
-								<input className="singin__inpot" type="password" placeholder='Повторите пароль' required />
+								<input className="singin__input" type="password" placeholder='Повторите пароль' required />
 							</div>
 						</div>
 						<button className="singin__button">Войти</button>
@@ -34,4 +35,4 @@ function Singin() {
 	);
 }
 
-export default Singin;
+export default SingIn;

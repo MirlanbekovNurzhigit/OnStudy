@@ -1,5 +1,5 @@
 import Statictics from "./sections/statictics";
-import Hero from "./sections/hero";
+import Hero from '../../components/hero';
 import Founders from "./sections/founders";
 
 

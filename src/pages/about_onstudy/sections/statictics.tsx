@@ -1,4 +1,5 @@
 import '../../../styles/pages/about_onstudy/sections/statictics/statictics.scss'
+import '../../../styles/pages/about_onstudy/sections/statictics/statictics_media.css'
 
 function Statistics() {
 	return (

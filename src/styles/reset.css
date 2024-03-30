@@ -32,17 +32,12 @@
 	src: url(../font/grafier/grafier-BlackDisplay.otf);
 }
 
-._logo_latin-Black {
+._hero-logo {
 	font-family: Grafier_Black_OnStudy, sans-serif;
 	color: #fff;
 }
 
-._logo_latin-BlackDisplay {
-	font-family: Grafier_BlackDisplay_OnStudy, sans-serif;
-	color: #fff;
-}
-
-/* HandilPro */
+/* Commissioner */
 
 @font-face {
 	font-family: Title_Font;
@@ -101,7 +96,7 @@ body {
 .container {
 	width: calc(var(--index) * 55);
 	margin: 0 auto;
-	background: #cacacadd;
+	/* background: #cacacadd; */
 }
 
 .container-header {

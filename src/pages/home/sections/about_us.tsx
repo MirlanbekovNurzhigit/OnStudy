@@ -1,4 +1,5 @@
 import '../../../styles/pages/home/sections/about-us/about-us.scss'
+import '../../../styles/pages/home/sections/about-us/about-us_media.css'
 
 function About_us() {
 	return (

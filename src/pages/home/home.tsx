@@ -1,5 +1,5 @@
 import '../../styles/pages/home/home.scss'
-import Hero from './sections/hero';
+import Hero from '../../components/hero';
 import About_us from './sections/about_us';
 import Popelar_courses from './sections/popelar_courses';
 import Mentors from './sections/mentors';
@@ -8,7 +8,7 @@ import Statistics from './sections/statistics';
 
 function Home() {
 	return (
-		<main className='home__main'>
+		<main>
 			<Hero />
 			<About_us />
 			<Statistics />

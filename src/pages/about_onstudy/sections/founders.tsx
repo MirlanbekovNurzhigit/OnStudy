@@ -1,4 +1,5 @@
 import '../../../styles/pages/about_onstudy/sections/found/found.scss'
+import '../../../styles/pages/about_onstudy/sections/found/found_media.css'
 import Mentor_card from '../../../components/mentor-card';
 
 

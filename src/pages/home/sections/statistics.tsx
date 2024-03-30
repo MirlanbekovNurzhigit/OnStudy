@@ -1,4 +1,5 @@
 import '../../../styles/pages/home/sections/statistics/statistics.scss'
+import '../../../styles/pages/home/sections/statistics/statistics_media.css'
 
 function Statistics() {
 	return (

@@ -1,19 +1,20 @@
-import '../../styles/pages/singin/first/firstsingin.scss'
+import '../../styles/pages/register&login/register/register.scss'
+import '../../styles/pages/register&login/register/register_media.css'
 import { Link } from 'react-router-dom';
 
-function Firstsingin() {
+function Register() {
 	return (
-		<main className='firstsingin__main'>
-			<section className='firstsingin'>
+		<main className='register__main'>
+			<section className='register'>
 				<div className="form">
 					<form action="">
 						<Link to="/login"><img className="arrow" src="" alt="arrow" /></Link>
 						<img className="logo" src="" alt="logo" />
-						<h2 className="firstsingin__title">Регистрация</h2>
+						<h2 className="register__title">Регистрация</h2>
 						<div className="input__block">
-							<input className="firstsingin__inpot" type="email" placeholder="Электронная почта" required />
+							<input className="register__input" type="email" placeholder="Электронная почта" required />
 						</div>
-						<button className="firstsingin__button"><Link to="/singin">Далее</Link></button>
+						<button className="register__button"><Link to="/singin">Далее</Link></button>
 					</form>
 					<p className="offer">Нажимая на кнопку, я принимаю оферу и соглашаюсь на обработку персональных данных</p>
 
@@ -33,4 +34,4 @@ function Firstsingin() {
 	);
 }
 
-export default Firstsingin;
+export default Register;

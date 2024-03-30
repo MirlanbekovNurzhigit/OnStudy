@@ -1,16 +1,15 @@
-import '../../styles/pages/login/login.scss'
+import '../../styles/pages/register&login/login/login.scss'
+import '../../styles/pages/register&login/login/login_media.css'
 import { Link } from 'react-router-dom';
 import Logo from '../../images/components/header/logo.svg'
 
-function Login() {
+function LogIn() {
 	return (
 		<main className='login__main'>
 			<section className='login'>
 				<div className="form">
 					<form action="">
-						<Link to="/"><img className="arrow" src="" alt="arrow" /></Link>
-						{/* <img className="logo" src="" alt="logo" /> */}
-						<img className="logo" src={Logo} alt="logo" />
+						<img className="logo" src="" alt="logo" />
 						<h2 className="login__title">Вход в профиль</h2>
 						<div className="input__box">
 							<div className="input__block">
@@ -40,4 +39,4 @@ function Login() {
 	);
 }
 
-export default Login;
+export default LogIn;

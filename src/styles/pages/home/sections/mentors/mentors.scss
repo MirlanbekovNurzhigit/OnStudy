@@ -22,12 +22,6 @@
 	.row {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 15px 20px;
-
-		.col-6 {
-			width: 770px;
-			height: 400px;
-			background: #a0a0a0;
-		}
+		justify-content: space-between;
 	}
 }

@@ -4,6 +4,7 @@
 	background: #724CF9;
 	top: 0;
 	left: 0;
+	z-index: 10;
 	width: 100%;
 
 	.nav {
@@ -13,15 +14,17 @@
 
 		.logo {
 			display: flex;
-			align-items: end;
+			align-items: center;
 			column-gap: calc(var(--index) * .4);
 
 			img {
-				width: calc(var(--index) * 1.7);
+				width: calc(var(--index) * 1.4);
 			}
 
 			h2 {
 				font-size: calc(var(--index) * 1.3);
+				font-family: Grafier_BlackDisplay_OnStudy, sans-serif;
+				color: #fff;
 			}
 		}
 
