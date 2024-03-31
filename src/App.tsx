@@ -13,7 +13,7 @@ import './styles/main.scss';
 function App() {
 	const location = useLocation();
 	const hideHeaderFooter = ['/login', '/firstsingin', '/singin'].includes(location.pathname);
-	const hideCircles = ['/courses'].includes(location.pathname);
+	const hideCircles = ['/courses', '/user'].includes(location.pathname);
 	return (
 		<div className="app__body">
 			{!hideHeaderFooter && <Header />}
