@@ -14,13 +14,13 @@ function ContinueGreeting() {
 						<p className="greeting__text">Сегодня прекрасный момент, чтобы расширить свои горизонты или применить знания на практике.</p>
 					</div>
 
-					<Swiper className="continue__watch"
+					{/* <Swiper className="continue__watch"
 						spaceBetween={120}
 						slidesPerView={3.5}
 					>
 						<SwiperSlide>
 							<div className="continue__watch-slide">
-								{/* <img src="" alt="" className="continue__slide-img" /> */}
+								<img src="" alt="" className="continue__slide-img" />
 								<div className="continue__slide-img"></div>
 								<p className="continue__slide-course-name">Как учится в OnStudy. <span className="continue__slide-course-name-description">Курс-знакомство</span></p>
 								<h2 className="continue__slide-course-stage">1.1 Добро пожаловать</h2>
@@ -51,7 +51,7 @@ function ContinueGreeting() {
 							</div>
 						</SwiperSlide>
 
-					</Swiper>
+					</Swiper> */}
 				</div>
 			</div>
 		</section>

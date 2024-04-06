@@ -14,10 +14,10 @@ function Popular_courses() {
 					</p>
 				</div>
 				<div className="row">
+					{/* <CoursesCard />
 					<CoursesCard />
 					<CoursesCard />
-					<CoursesCard />
-					<CoursesCard />
+					<CoursesCard /> */}
 				</div>
 			</div>
 		</section>
