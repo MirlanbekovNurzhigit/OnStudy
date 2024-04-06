@@ -1,13 +1,13 @@
-import React from 'react';
 import Course from '../type/courses';
 import '../styles/components/card-course/card-course.scss';
+import { Link } from 'react-router-dom';
 
 interface CardCourseProps {
 	course: Course;
 }
 
 function CardCourse({ course }: CardCourseProps) {
-	const { type, name, price, image } = course;
+	const { id, type, name, price, image } = course;
 
 	const maxNameLength = 20;
 
@@ -16,7 +16,7 @@ function CardCourse({ course }: CardCourseProps) {
 		name;
 
 	return (
-		<div className="course__card">
+		<Link to={`/course/${name}/${id}`} className="course__card">
 			<div className="box">
 				<div className="course__box-card-left">
 					<h6 className="course__text">{type}</h6>
@@ -27,7 +27,7 @@ function CardCourse({ course }: CardCourseProps) {
 					<img src={image} alt="" />
 				</div>
 			</div>
-		</div>
+		</Link >
 	);
 }
 

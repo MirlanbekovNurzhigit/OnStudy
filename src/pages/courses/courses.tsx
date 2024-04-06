@@ -1,31 +1,31 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import CardCourse from '../../components/card-course';
 import Course from '../../type/courses';
-import '../../styles/pages/courses/courses.scss'
+import '../../styles/pages/courses/courses.scss';
 
 function Courses() {
-	const [allCourses, setAllCourses] = useState<Course[]>([]);
-	const [freeCourses, setFreeCourses] = useState<Course[]>([]);
+	const [allCourses, setAllCourses] = useState<Course[]>([])
+	const [freeCourses, setFreeCourses] = useState<Course[]>([])
 
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
-				const response = await axios.get<Course[]>('http://localhost:8000/courses');
-				const courses = response.data;
+				const response = await axios.get<Course[]>('http://localhost:8000/courses')
+				const courses = response.data
 
-				const freeCourses = courses.filter((course) => course.price === 'Free' || course.price === 'Бесплатно');
-				const paidCourses = courses.filter((course) => course.price !== 'Free' && course.price !== 'Бесплатно');
+				const freeCourses = courses.filter((course) => course.price === 'Free' || course.price === 'Бесплатно')
+				const paidCourses = courses.filter((course) => course.price !== 'Free' && course.price !== 'Бесплатно')
 
-				setAllCourses(paidCourses);
-				setFreeCourses(freeCourses);
+				setAllCourses(paidCourses)
+				setFreeCourses(freeCourses)
 			} catch (error) {
-				console.error('Ошибка при загрузке данных:', error);
+				console.error('Ошибка при загрузке данных:', error)
 			}
 		};
 
-		fetchData();
-	}, []);
+		fetchData()
+	}, [])
 
 	return (
 		<main className="courses">

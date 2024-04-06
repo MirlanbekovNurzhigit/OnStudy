@@ -8,6 +8,7 @@ import Login from './pages/register&singin/login';
 import Register from './pages/register&singin/register';
 import Singin from './pages/register&singin/singin';
 import Profiel from './pages/profiel/profiel';
+import PageCourse from './pages/courses/course/page-course';
 import './styles/main.scss';
 
 function App() {
@@ -31,8 +32,9 @@ function App() {
 
 			<Routes>
 				<Route path="/" element={<Home />} />
-				<Route path="/about-OnStudy" element={<About_onstudy />} />
 				<Route path="/courses" element={<Courses />} />
+				<Route path="/course/:name/:id" element={<PageCourse />} />
+				<Route path="/about-OnStudy" element={<About_onstudy />} />
 				<Route path="/user" element={<Profiel />} />
 
 				{/* will edit */}

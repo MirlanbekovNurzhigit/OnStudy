@@ -1,4 +1,4 @@
-interface Course {
+interface TypeCourse {
 	id: string;
 	name: string;
 	type: string;
@@ -69,4 +69,4 @@ interface Course {
 	}
 }
 
-export default Course
+export default TypeCourse;
