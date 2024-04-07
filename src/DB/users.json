@@ -1,28 +1,10 @@
 {
 	"users": [
 		{
-			"idName": "nurzhigit",
 			"email": "misterpusistyestany@gmail.com",
-			"password": "qwerty123456",
-			"userHaveCourses": {
-				"course1": "name",
-				"course2": "name",
-				"course3": "name",
-				"course4": "name",
-				"course5": "name"
-			}
-		},
-		{
-			"idName": "someone",
-			"email": "someone@onstady.com",
-			"password": "222313131",
-			"userHaveCourses": {
-				"course1": "name",
-				"course2": "name",
-				"course3": "name",
-				"course4": "name",
-				"course5": "name"
-			}
+			"firstName": "Chief",
+			"lastName": "Keef",
+			"password": "1234qwer"
 		}
 	]
 }

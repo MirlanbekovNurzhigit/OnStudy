@@ -1,6 +1,11 @@
 import '../../../styles/pages/home/sections/popular-courses/popular-courses.scss'
 import '../../../styles/pages/home/sections/popular-courses/popular-courses_media.css'
 import CoursesCard from '../../../components/card-course'
+import TypeCourse from '../../../type/courses';
+
+// interface CardCourseProps {
+// 	course: TypeCourse;
+// }
 
 function Popular_courses() {
 	return (
@@ -14,10 +19,10 @@ function Popular_courses() {
 					</p>
 				</div>
 				<div className="row">
-					{/* <CoursesCard />
-					<CoursesCard />
-					<CoursesCard />
-					<CoursesCard /> */}
+					{/* <CoursesCard type={} />
+					<CoursesCard type={} />
+					<CoursesCard type={} />
+					<CoursesCard type={} /> */}
 				</div>
 			</div>
 		</section>

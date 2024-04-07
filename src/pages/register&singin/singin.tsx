@@ -1,6 +1,7 @@
 import '../../styles/pages/register&login/singin/singin.scss'
 import '../../styles/pages/register&login/singin/singin_media.css'
 import { Link } from 'react-router-dom';
+import Logo from '../../images/BlackLogo.svg'
 
 function SingIn() {
 	return (
@@ -9,7 +10,7 @@ function SingIn() {
 				<div className="form">
 					<form action="">
 						<Link to="/firstsingin"><img className="arrow" src="" alt="arrow" /></Link>
-						<img className="logo" src="" alt="logo" />
+						<img className="logo" src={Logo} alt="logo" />
 						<h2 className="singin__title">Регистрация</h2>
 						<div className="input__box">
 							<div className="input__block">

@@ -9,12 +9,17 @@ import Register from './pages/register&singin/register';
 import Singin from './pages/register&singin/singin';
 import Profiel from './pages/profiel/profiel';
 import PageCourse from './pages/courses/course/page-course';
+import Admin from './admin/admin';
 import './styles/main.scss';
+
+// json-server --watch courses.json --port 8000
+// json-server --watch users.json --port 8001
 
 function App() {
 	const location = useLocation();
-	const hideHeaderFooter = ['/login', '/firstsingin', '/singin'].includes(location.pathname);
-	const hideCircles = ['/courses', '/user'].includes(location.pathname);
+	const hideHeaderFooter = ['/login', '/firstsingin', '/singin', '/adminkaasdsafdgfassd'].includes(location.pathname);
+	const hideCircles = ['/courses', '/user', '/course/:name/:id'].includes(location.pathname);
+
 	return (
 		<div className="app__body">
 			{!hideHeaderFooter && <Header />}
@@ -35,6 +40,7 @@ function App() {
 				<Route path="/courses" element={<Courses />} />
 				<Route path="/course/:name/:id" element={<PageCourse />} />
 				<Route path="/about-OnStudy" element={<About_onstudy />} />
+				<Route path="/adminkaasdsafdgfassd" element={<Admin />} />
 				<Route path="/user" element={<Profiel />} />
 
 				{/* will edit */}

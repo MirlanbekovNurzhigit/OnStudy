@@ -1,349 +1,99 @@
 {
-	"courses": [
-		{
-			"name": "IELTS",
-			"type": "Курс",
-			"price": "50.000 Сом",
-			"image": "link",
-			"videocount": 23,
-			"videos": {
-				"IntroductoryPart": {
-					"first": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					},
-					"second": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					},
-					"third": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					}
-				},
-				"Practice": {
-					"first": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					},
-					"second": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					},
-					"third": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					}
-				},
-				"Conclusion": {
-					"first": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					},
-					"second": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					},
-					"third": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					}
-				}
-			}
-		},
-		{
-			"name": "SAT MATH",
-			"type": "Курс",
-			"price": "30.000 Сом",
-			"image": "link",
-			"videocount": "23",
-			"videos": {
-				"IntroductoryPart": {
-					"first": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					},
-					"second": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					},
-					"third": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					}
-				},
-				"Practice": {
-					"first": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					},
-					"second": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					},
-					"third": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					}
-				},
-				"Conclusion": {
-					"first": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					},
-					"second": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					},
-					"third": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					}
-				}
-			}
-		},
-		{
-			"name": "English",
-			"type": "Курс",
-			"price": "5.000 Сом",
-			"image": "link",
-			"videocount": "23",
-			"videos": {
-				"IntroductoryPart": {
-					"first": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					},
-					"second": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					},
-					"third": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					}
-				},
-				"Practice": {
-					"first": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					},
-					"second": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					},
-					"third": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					}
-				},
-				"Conclusion": {
-					"first": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					},
-					"second": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					},
-					"third": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					}
-				}
-			}
-		},
-		{
-			"name": "JavaScript",
-			"type": "Курс",
-			"price": "10.000 Сом",
-			"image": "link",
-			"videocount": "23",
-			"videos": {
-				"IntroductoryPart": {
-					"first": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					},
-					"second": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					},
-					"third": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					}
-				},
-				"Practice": {
-					"first": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					},
-					"second": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					},
-					"third": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					}
-				},
-				"Conclusion": {
-					"first": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					},
-					"second": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					},
-					"third": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					}
-				}
-			}
-		},
-		{
-			"name": "Как учиться в OnStudy. Курс-знакомство",
-			"type": "Курс",
-			"price": "Free",
-			"image": "link",
-			"videocount": "23",
-			"videos": {
-				"IntroductoryPart": {
-					"first": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					},
-					"second": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					},
-					"third": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					}
-				},
-				"Practice": {
-					"first": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					},
-					"second": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					},
-					"third": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					}
-				},
-				"Conclusion": {
-					"first": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					},
-					"second": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					},
-					"third": {
-						"name": "sadada",
-						"videoImage": "link",
-						"duration": "24h",
-						"video": "https://youtu.be/zecADHk0kJE?si=RHRcZs0Fhrvdww9N"
-					}
-				}
-			}
-		}
-	]
+  "courses": [
+    {
+      "name": "IELTS",
+      "type": "Курс",
+      "price": "50.000 Сом",
+      "image": "link",
+      "videocount": 23,
+      "ctgrs": [
+        {
+          "ctgrName": "IntroductoryPart",
+          "videos": [
+            {
+              "name": "sadada",
+              "videoImage": "link",
+              "duration": "24h",
+              "UrlVideo": "https://www.youtube.com/embed/zecADHk0kJE?si=E8Qnkb12mDd4GFgo"
+            },
+            {
+              "name": "lol",
+              "videoImage": "link",
+              "duration": "24h",
+              "UrlVideo": "https://www.youtube.com/embed/zecADHk0kJE?si=E8Qnkb12mDd4GFgo"
+            }
+          ]
+        },
+        {
+          "ctgrName": "IntroductoryPart",
+          "videos": [
+            {
+              "name": "sadada",
+              "videoImage": "link",
+              "duration": "24h",
+              "UrlVideo": "https://www.youtube.com/embed/zecADHk0kJE?si=E8Qnkb12mDd4GFgo"
+            },
+            {
+              "name": "sadada",
+              "videoImage": "link",
+              "duration": "24h",
+              "UrlVideo": "https://www.youtube.com/embed/zecADHk0kJE?si=E8Qnkb12mDd4GFgo"
+            }
+          ]
+        },
+        {
+          "ctgrName": "IntroductoryPart",
+          "videos": [
+            {
+              "name": "sadada",
+              "videoImage": "link",
+              "duration": "24h",
+              "UrlVideo": "https://www.youtube.com/embed/zecADHk0kJE?si=E8Qnkb12mDd4GFgo"
+            },
+            {
+              "name": "sadada",
+              "videoImage": "link",
+              "duration": "24h",
+              "UrlVideo": "https://www.youtube.com/embed/zecADHk0kJE?si=E8Qnkb12mDd4GFgo"
+            }
+          ]
+        },
+        {
+          "ctgrName": "IntroductoryPart",
+          "videos": [
+            {
+              "name": "sadada",
+              "videoImage": "link",
+              "duration": "24h",
+              "UrlVideo": "https://www.youtube.com/embed/zecADHk0kJE?si=E8Qnkb12mDd4GFgo"
+            },
+            {
+              "name": "sadada",
+              "videoImage": "link",
+              "duration": "24h",
+              "UrlVideo": "https://www.youtube.com/embed/zecADHk0kJE?si=E8Qnkb12mDd4GFgo"
+            }
+          ]
+        },
+        {
+          "ctgrName": "IntroductoryPart",
+          "videos": [
+            {
+              "name": "sadada",
+              "videoImage": "link",
+              "duration": "24h",
+              "UrlVideo": "https://www.youtube.com/embed/zecADHk0kJE?si=E8Qnkb12mDd4GFgo"
+            },
+            {
+              "name": "sadada",
+              "videoImage": "link",
+              "duration": "24h",
+              "UrlVideo": "https://www.youtube.com/embed/zecADHk0kJE?si=E8Qnkb12mDd4GFgo"
+            }
+          ]
+        }
+      ],
+      "id": "8267"
+    }
+  ]
 }

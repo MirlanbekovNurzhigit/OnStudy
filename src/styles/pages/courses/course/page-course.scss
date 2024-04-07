@@ -1,10 +1,51 @@
 .page__course {
-	h1 {
-		font-size: 100px;
-		margin-top: 1000px;
+	margin-top: calc(var(--index) * 7);
+
+	.page__course-main {
+		.row {
+			display: flex;
+			justify-content: space-between;
+
+			.page__course-main-left {
+
+				.page__course-main-left-card {
+
+					.page__course-main-left-card-box {
+						display: flex;
+						justify-content: space-between;
+
+						.page__course-main-left-card-left {
+							width: calc(var(--index) * 20);
+							padding: calc(var(--index) * 1.25);
+							background: #8844F7;
+
+							.page__course-main-left-card-name {
+								color: #4A16A1;
+								font-size: calc(var(--index) * 1.35);
+								margin: calc(var(--index) * .4) 0 calc(var(--index) * 2.8);
+							}
+
+							.page__course-main-left-card-video-count {
+								color: #BD97FB;
+								font-size: calc(var(--index) * .65);
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
-.Loading {
-	font-size: 300px;
+.loading-main {
+	padding: calc(var(--index) * 11) 0 calc(var(--index) * 1);
+	text-align: center;
+	color: #4A16A1;
+	height: 100vh;
+
+	.loading {
+		font-size: calc(var(--index) * 10);
+		padding-bottom: calc(var(--index) * 1.2);
+		color: #fff;
+	}
 }

@@ -1,72 +1,23 @@
 interface TypeCourse {
-	id: string;
 	name: string;
 	type: string;
 	price: string;
 	image: string;
 	videocount: number;
-	videos: {
-		IntroductoryPart: {
-			first: {
-				name: string;
-				videoImage: string;
-				duration: number;
-				video: string;
-			}
-			second: {
-				name: string;
-				videoImage: string;
-				duration: number;
-				video: string;
-			}
-			third: {
-				name: string;
-				videoImage: string;
-				duration: number;
-				video: string;
-			}
+	ctgrs: [
+		{
+			ctgrName: string,
+			videos: [
+				{
+					name: string;
+					videoImage: string;
+					duration: number;
+					UrlVideo: string;
+				}
+			]
 		}
-		Practice: {
-			first: {
-				name: string;
-				videoImage: string;
-				duration: number;
-				video: string;
-			}
-			second: {
-				name: string;
-				videoImage: string;
-				duration: number;
-				video: string;
-			}
-			third: {
-				name: string;
-				videoImage: string;
-				duration: number;
-				video: string;
-			}
-		}
-		Conclusion: {
-			first: {
-				name: string;
-				videoImage: string;
-				duration: number;
-				video: string;
-			}
-			second: {
-				name: string;
-				videoImage: string;
-				duration: number;
-				video: string;
-			}
-			third: {
-				name: string;
-				videoImage: string;
-				duration: number;
-				video: string;
-			}
-		}
-	}
+	],
+	id: any
 }
 
 export default TypeCourse;

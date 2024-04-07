@@ -1,6 +1,7 @@
 import '../../styles/pages/register&login/register/register.scss'
 import '../../styles/pages/register&login/register/register_media.css'
 import { Link } from 'react-router-dom';
+import Logo from '../../images/BlackLogo.svg'
 
 function Register() {
 	return (
@@ -9,7 +10,7 @@ function Register() {
 				<div className="form">
 					<form action="">
 						<Link to="/login"><img className="arrow" src="" alt="arrow" /></Link>
-						<img className="logo" src="" alt="logo" />
+						<img className="logo" src={Logo} alt="logo" />
 						<h2 className="register__title">Регистрация</h2>
 						<div className="input__block">
 							<input className="register__input" type="email" placeholder="Электронная почта" required />
