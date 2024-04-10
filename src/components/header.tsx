@@ -17,7 +17,7 @@ function Header() {
 					<ul className="menu">
 						<li><Link to="/">Главная</Link></li>
 						<li><Link to="/courses">Курсы</Link></li>
-						<li><Link to="/about-OnStudy">О OnStudy</Link></li>
+						<li><Link to="/about-OnStudy">О Нас</Link></li>
 					</ul>
 					<Link to="/login" className="header__button">Войти</Link>
 				</nav>

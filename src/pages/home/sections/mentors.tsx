@@ -1,8 +1,13 @@
 import '../../../styles/pages/home/sections/mentors/mentors.scss'
 import '../../../styles/pages/home/sections/mentors/mentors_media.css'
-import Mentor_card from '../../../components/mentor-card';
+import MentorCard from '../../../components/mentor-card';
+import TypeMentors from '../../../type/mentors';
 
-function Mentors() {
+interface MentorsProps {
+	mentorsData: TypeMentors[];
+}
+
+function Mentors({ mentorsData }: MentorsProps) {
 	return (
 		<section className="mentors">
 			<div className="container">
@@ -13,9 +18,9 @@ function Mentors() {
 					</p>
 				</div>
 				<div className="row">
-					<Mentor_card />
-					<Mentor_card />
-					<Mentor_card />
+					{mentorsData.slice(0, 3).map(mentor => (
+						<MentorCard key={mentor.id} mentor={mentor} />
+					))}
 				</div>
 			</div>
 		</section>

@@ -1,16 +1,25 @@
-import '../styles/components/mentor-course/mentor-course.scss'
-import MentorPhoto from '../images/pages/mentor.jpeg'
+import '../styles/components/mentor-course/mentor-course.scss';
+import mentorImg from '../images/mentor.png';
+import TypeMentors from '../type/mentors';
 
-function Mentor_card() {
+interface CardMentorProps {
+	mentor: TypeMentors
+}
+
+function MentorCard({ mentor }: CardMentorProps) {
+	const { firstName, lastName, description, photoLinkUrl } = mentor;
+
 	return (
 		<div className="mentor__card">
-			<img className="mentor__photo" src={MentorPhoto} alt="Mentor Photo" />
+			<img className="mentor__photo" src={photoLinkUrl} alt="Mentor Photo" />
 			<div className="mentor__card-box">
-				<h2 className="mentor__name">Куратор эксперт</h2>
-				<p className="mentor__description">Подробно разбирает домашние задания, помогает сделать лучше</p>
+				<div>
+					<h2 className="mentor__name">{`${firstName} ${lastName}`}</h2>
+					<p className="mentor__description">{description}</p>
+				</div>
 			</div>
 		</div>
 	);
 }
 
-export default Mentor_card;
+export default MentorCard;

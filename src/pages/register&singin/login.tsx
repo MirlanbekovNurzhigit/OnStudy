@@ -9,8 +9,10 @@ function LogIn() {
 			<section className='login'>
 				<div className="form">
 					<form action="">
-						<img className="logo" src={Logo} alt="logo" />
-						<h2 className="login__title">Вход в профиль</h2>
+						<div className="logo__block">
+							<img className="logo" src={Logo} alt="logo" />
+							<h2 className="login__title">Вход в профиль</h2>
+						</div>
 						<div className="input__box">
 							<div className="input__block">
 								<input

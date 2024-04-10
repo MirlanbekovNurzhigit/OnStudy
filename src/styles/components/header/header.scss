@@ -45,6 +45,7 @@
 		.header__button {
 			padding: calc(var(--index) * .5) calc(var(--index) * 1.3);
 			background: #AA37F5;
+			border-radius: calc(var(--index) * .5);
 
 			color: #fff;
 			font-size: calc(var(--index) * .87);

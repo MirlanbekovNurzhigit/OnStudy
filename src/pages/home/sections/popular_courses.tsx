@@ -3,13 +3,13 @@ import '../../../styles/pages/home/sections/popular-courses/popular-courses_medi
 import CoursesCard from '../../../components/card-course'
 import TypeCourse from '../../../type/courses';
 
-// interface CardCourseProps {
-// 	course: TypeCourse;
-// }
+interface PopularCoursesProps {
+	coursesData: TypeCourse[];
+}
 
-function Popular_courses() {
+function Popular_courses({ coursesData }: PopularCoursesProps) {
 	return (
-		<section className="popular__courses">
+		<section className="popular__courses" >
 			<div className="container">
 
 				<div className="popular__courses-text-content">
@@ -19,10 +19,9 @@ function Popular_courses() {
 					</p>
 				</div>
 				<div className="row">
-					{/* <CoursesCard type={} />
-					<CoursesCard type={} />
-					<CoursesCard type={} />
-					<CoursesCard type={} /> */}
+					{coursesData.slice(0, 4).map(course => (
+						<CoursesCard key={course.id} course={course} />
+					))}
 				</div>
 			</div>
 		</section>

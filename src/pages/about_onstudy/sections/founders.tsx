@@ -9,9 +9,9 @@ function Founders() {
 			<div className="container">
 				<h2 className="founders__title">Основатели платформы</h2>
 				<div className="row">
+					{/* <Mentor_card />
 					<Mentor_card />
-					<Mentor_card />
-					<Mentor_card />
+					<Mentor_card /> */}
 				</div>
 			</div>
 		</section>

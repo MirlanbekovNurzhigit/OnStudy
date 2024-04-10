@@ -1,9 +1,9 @@
-import Course from '../type/courses';
-import '../styles/components/card-course/card-course.scss';
+import TypeCourse from '../type/courses';
 import { Link } from 'react-router-dom';
+import '../styles/components/card-course/card-course.scss';
 
 interface CardCourseProps {
-	course: Course;
+	course: TypeCourse;
 }
 
 function CardCourse({ course }: CardCourseProps) {

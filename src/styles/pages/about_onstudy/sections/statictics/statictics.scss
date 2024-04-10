@@ -12,22 +12,27 @@
 	}
 
 	.statistics__statistic {
+		border-radius: calc(var(--index) * .5);
 		width: 100%;
 		display: flex;
-		background: #a0a0a0a0;
-		column-gap: calc(var(--index) * 1.3);
-		padding: calc(var(--index) * 1.1) 0 calc(var(--index) * 1.1) calc(var(--index) * 1.1);
+		background: #8844F7;
+		column-gap: calc(var(--index) * 1.5);
+		padding: calc(var(--index) * 1.2) 0 calc(var(--index) * 1.2) calc(var(--index) * 2);
 
-		.statistic__image {}
+		.statistic__image {
+			width: calc(var(--index) * 3);
+		}
 
 		.statistics__statistic-inside-box {
 			.statistic {
 				font-family: Title_Font, sans-serif;
+				color: #4A16A1;
 				font-size: calc(var(--index) * 1.4);
 			}
 
 			.information {
 				font-size: calc(var(--index) * 1.4);
+				color: #BD97FB;
 			}
 		}
 	}

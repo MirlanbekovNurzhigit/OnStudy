@@ -2,6 +2,7 @@ import '../../styles/pages/register&login/register/register.scss'
 import '../../styles/pages/register&login/register/register_media.css'
 import { Link } from 'react-router-dom';
 import Logo from '../../images/BlackLogo.svg'
+import Arrow from '../../images/arrow.svg'
 
 function Register() {
 	return (
@@ -9,9 +10,11 @@ function Register() {
 			<section className='register'>
 				<div className="form">
 					<form action="">
-						<Link to="/login"><img className="arrow" src="" alt="arrow" /></Link>
-						<img className="logo" src={Logo} alt="logo" />
-						<h2 className="register__title">Регистрация</h2>
+						<Link to="/login"><img className="arrow" src={Arrow} alt="arrow" /></Link>
+						<div className="logo__block">
+							<img className="logo" src={Logo} alt="logo" />
+							<h2 className="register__title">Регистрация</h2>
+						</div>
 						<div className="input__block">
 							<input className="register__input" type="email" placeholder="Электронная почта" required />
 						</div>

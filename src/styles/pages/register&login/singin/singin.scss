@@ -10,13 +10,26 @@
 
 		.form {
 			width: calc(var(--index) * 19);
-			padding: calc(var(--index) * 2.5) calc(var(--index) * 2.1) calc(var(--index) * 2.5);
+			padding: calc(var(--index) * 2.5) calc(var(--index) * 2.1) calc(var(--index) * 2.9);
 			background: #fff;
+			border-radius: calc(var(--index) * .5);
 
-			.singin__title {
+			.arrow {
+				width: calc(var(--index) * 1.5);
+			}
+
+			.logo__block {
 				text-align: center;
-				font-size: calc(var(--index) * 1.3);
-				color: #724CF9;
+
+				.logo {
+					width: calc(var(--index) * 2.2);
+					margin-bottom: calc(var(--index) * .8);
+				}
+
+				.singin__title {
+					font-size: calc(var(--index) * 1.3);
+					color: #724CF9;
+				}
 			}
 
 			.input__box {
@@ -33,6 +46,12 @@
 					border: calc(var(--index) * .02) solid #d3d3d3;
 					padding: 0 calc(var(--index) * 1) 0 calc(var(--index) * .7);
 					font-size: calc(var(--index) * .7);
+					border-radius: calc(var(--index) * .5);
+					transition: all 0.5s ease 0s;
+				}
+
+				.singin__input:focus {
+					box-shadow: 0 0 calc(var(--index) * .3) #d3d3d3;
 				}
 			}
 
@@ -42,6 +61,7 @@
 				background: #D9D9D980;
 				font-size: calc(var(--index) * .7);
 				margin-bottom: calc(var(--index) * .6);
+				border-radius: calc(var(--index) * .5);
 			}
 
 			.offer {

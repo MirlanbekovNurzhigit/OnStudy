@@ -1,42 +1,56 @@
-import { useState, useEffect, SetStateAction } from 'react';
-import axios from 'axios';
+import { useState, useEffect, useRef } from 'react';
 import { useParams } from 'react-router-dom';
+import gsap from 'gsap';
 import TypeCourse from '../../../type/courses';
-import '../../../styles/pages/courses/course/page-course_media.css'
-import '../../../styles/pages/courses/course/page-course.scss'
+import '../../../styles/pages/courses/course/page-course_media.css';
+import '../../../styles/pages/courses/course/page-course.scss';
+import arrowDown from '../../../images/arrowdown.svg'
 
+interface PageCourseProps {
+	data: TypeCourse[];
+}
 
-function PageCourse() {
+function PageCourse({ data }: PageCourseProps) {
 	const [courseData, setCourseData] = useState<TypeCourse | null>(null);
 	const { id } = useParams<{ id: string }>();
-	const [selectedOption, setSelectedOption] = useState('');
+	const [activeCategory, setActiveCategory] = useState<string | null>(null);
+	const [categoryVideosVisibility, setCategoryVideosVisibility] = useState<{ [key: string]: boolean }>({});
+	const videosRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
-		const fetchCourse = async () => {
-			try {
-				const response = await axios.get<TypeCourse[]>(`http://localhost:8000/courses`);
-				const foundCourse = response.data.find(course => course.id === id);
-				if (foundCourse) {
-					setCourseData(foundCourse);
-				} else {
-					console.error(`Курс с идентификатором ${id} не найден.`);
-				}
-			} catch (error) {
-				console.error('Ошибка при получении данных о курсе:', error);
-			}
-		};
+		const foundCourse = data.find(course => course.id === id);
+		if (foundCourse) {
+			setCourseData(foundCourse);
+		} else {
+			console.error(`Курс с идентификатором ${id} не найден.`);
+		}
+	}, [id, data]);
 
-		fetchCourse();
-	}, [id]);
+	useEffect(() => {
 
-	const handleSelectChange = (event: { target: { value: SetStateAction<string>; }; }) => {
-		setSelectedOption(event.target.value);
+		if (activeCategory) {
+			gsap.to(videosRef.current, { height: '100%', duration: 0.5 });
+		} else {
+			gsap.to(videosRef.current, { height: 0, duration: 0.5 });
+		}
+	}, [activeCategory]);
+
+	const handleCategoryClick = (categoryName: string) => {
+		if (activeCategory === categoryName) {
+			setActiveCategory(null);
+			setCategoryVideosVisibility(prevState => ({ ...prevState, [categoryName]: false }));
+		} else {
+			setActiveCategory(categoryName);
+			setCategoryVideosVisibility(prevState => ({ ...prevState, [categoryName]: true }));
+		}
 	};
 
 	if (!courseData) {
-		return <div className="loading">
-			<h1 className="loading"></h1>
-		</div>;
+		return (
+			<div className="loading">
+				<h1>Loading...</h1>
+			</div>
+		);
 	}
 
 	return (
@@ -57,8 +71,43 @@ function PageCourse() {
 								</div>
 							</div>
 						</div>
+
 						<div className="page__course-main-right">
-							{/* <iframe width="560" height="315" src={courseData.ctgrs.ctgr.videos.video.video} title={courseData.ctgrs.ctgr.videos.video.name} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> */}
+							<div className="category-list">
+								{courseData.ctgrs.map((category, index) => (
+									<div key={index} className="category-item">
+
+										<div className="page__course-main-right-button" onClick={() => handleCategoryClick(category.ctgrName)}>
+											<div className="line"></div>
+											<div className="page__course-main-right-button-box">
+												<h2 className="category__name">{`${index + 1}. ${category.ctgrName}`}</h2>
+												<div className="arrow__down">
+													<img src={arrowDown} alt="arrow" />
+												</div>
+											</div>
+										</div>
+
+										<div className="videos__row" style={{ height: categoryVideosVisibility[category.ctgrName] ? 'auto' : '0', overflow: 'hidden' }}>
+											{category.videos.map((video, vIndex) => (
+												<div className="video">
+													<iframe
+														className="video__on-youtube"
+														key={vIndex}
+														src={video.UrlVideo}
+														title={video.name}
+														width="560"
+														height="315"
+														allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+														allowFullScreen
+													></iframe>
+													<h4 className='video__name'>{`${index + 1}.${vIndex + 1} ${video.name}`}</h4>
+												</div>
+											))}
+										</div>
+
+									</div>
+								))}
+							</div>
 						</div>
 					</div>
 				</div>

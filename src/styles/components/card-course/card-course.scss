@@ -3,6 +3,7 @@
 	height: calc(var(--index) * 8.4);
 	background: #8844F7;
 	padding: calc(var(--index) * .8) calc(var(--index) * 1.2);
+	border-radius: calc(var(--index) * .5);
 
 	.box {
 		display: flex;

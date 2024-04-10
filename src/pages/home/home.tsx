@@ -5,17 +5,26 @@ import Popular_courses from './sections/popular_courses';
 import Mentors from './sections/mentors';
 import Choice from './sections/choice';
 import Statistics from './sections/statistics';
+import TypeCourse from '../../type/courses';
+import TypeMentors from '../../type/mentors';
 
-function Home() {
+interface StatisticsProps {
+	coursesCount: number;
+	coursesData: TypeCourse[];
+	mentorsData: TypeMentors[];
+	usersCount: number
+}
+
+function Home({ coursesCount, coursesData, mentorsData, usersCount }: StatisticsProps) {
 	return (
 		<main>
 			<Hero />
 			<About_us />
-			<Statistics />
-			<Popular_courses />
+			<Statistics usersCount={usersCount} coursesCount={coursesCount} />
+			<Popular_courses coursesData={coursesData} />
 			<Choice />
+			<Mentors mentorsData={mentorsData} />
 			{/* edit mentors */}
-			{/* <Mentors /> */}
 		</main>
 	);
 }

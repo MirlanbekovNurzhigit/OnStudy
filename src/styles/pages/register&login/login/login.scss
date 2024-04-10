@@ -12,13 +12,21 @@
 			width: calc(var(--index) * 19);
 			padding: calc(var(--index) * 2.5) calc(var(--index) * 2.1) calc(var(--index) * 2.5);
 			background: #fff;
+			border-radius: calc(var(--index) * .5);
 
-			.logo {}
 
-			.login__title {
+			.logo__block {
 				text-align: center;
-				font-size: calc(var(--index) * 1.3);
-				color: #724CF9;
+
+				.logo {
+					width: calc(var(--index) * 2.2);
+					margin-bottom: calc(var(--index) * .8);
+				}
+
+				.login__title {
+					font-size: calc(var(--index) * 1.3);
+					color: #724CF9;
+				}
 			}
 
 			.input__box {
@@ -26,7 +34,7 @@
 				flex-wrap: wrap;
 				justify-content: center;
 				row-gap: calc(var(--index) * .6);
-				margin-top: calc(var(--index) * 1.4);
+				margin: calc(var(--index) * 1.4) 0 calc(var(--index)* 0.6);
 
 				.login__input {
 					width: calc(var(--index) * 14.8);
@@ -35,16 +43,22 @@
 					border: calc(var(--index) * .02) solid #d3d3d3;
 					padding: 0 calc(var(--index) * 1) 0 calc(var(--index) * .7);
 					font-size: calc(var(--index) * .7);
+					border-radius: calc(var(--index) * .5);
+					transition: all 0.5s ease 0s;
+				}
+
+				.login__input:focus {
+					box-shadow: 0 0 calc(var(--index) * .3) #d3d3d3;
 				}
 			}
 
-			.forgot {
-				color: #000;
-				font-size: calc(var(--index) * .6);
-				display: block;
-				text-decoration-line: underline;
-				margin: calc(var(--index) * .7) 0;
-			}
+			// .forgot {
+			// 	color: #000;
+			// 	font-size: calc(var(--index) * .6);
+			// 	display: block;
+			// 	text-decoration-line: underline;
+			// 	margin: calc(var(--index) * .7) 0;
+			// }
 
 			.login__button {
 				width: calc(var(--index) * 14.8);
@@ -53,12 +67,14 @@
 				margin-bottom: calc(var(--index) * .6);
 				font-size: calc(var(--index) * .6);
 				color: #000;
+				border-radius: calc(var(--index) * .5);
 			}
 
 			.button {
 				width: calc(var(--index) * 14.8);
 				height: calc(var(--index) * 2);
 				border: calc(var(--index) * .02) solid #d3d3d3;
+				border-radius: calc(var(--index) * .5);
 
 				a {
 					font-size: calc(var(--index) * .6);
