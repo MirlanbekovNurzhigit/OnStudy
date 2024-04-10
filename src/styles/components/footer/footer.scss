@@ -2,15 +2,15 @@
 	.footer__box {
 		display: flex;
 		justify-content: space-between;
-		margin: 150px 0 100px;
+		margin: calc(var(--index) * 5) 0 calc(var(--index) * 4);
 
 		.footer__text {
-			font-size: 24px;
+			font-size: calc(var(--index) * 1.2);
 		}
 
 		.social__links {
 			display: flex;
-			column-gap: 30px;
+			column-gap: calc(var(--index) * 1.3);
 		}
 	}
 }

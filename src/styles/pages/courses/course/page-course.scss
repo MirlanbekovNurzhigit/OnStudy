@@ -76,6 +76,8 @@
 
 						.video__on-youtube {
 							width: 100%;
+							height: calc(var(--index) * 8.5);
+							border-radius: calc(var(--index) * .5);
 							margin-bottom: calc(var(--index) * .7);
 						}
 

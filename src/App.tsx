@@ -16,6 +16,7 @@ import './styles/main.scss';
 
 // json-server --watch courses.json --port 8000
 // json-server --watch users.json --port 8001
+// json-server --watch mentors.json --port 8002
 
 function App() {
 	const location = useLocation();

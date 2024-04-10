@@ -8,7 +8,7 @@ function LogIn() {
 		<main className='login__main'>
 			<section className='login'>
 				<div className="form">
-					<form action="">
+					<form action="" className="form__org">
 						<div className="logo__block">
 							<img className="logo" src={Logo} alt="logo" />
 							<h2 className="login__title">Вход в профиль</h2>
@@ -32,9 +32,15 @@ function LogIn() {
 							</div>
 						</div>
 						{/* <a href="#" className="forgot">Не помню пароль</a> */}
-						<button type="submit" className="login__button">Войти</button>
+						<div className="login__btn">
+							<button type="submit" className="login__button">Войти</button>
+						</div>
 					</form>
-					<button className="button"><Link to="/firstsingin">Создать профиль</Link></button>
+
+					<div className="login__btn">
+						<button className="button"><Link to="/firstsingin">Создать профиль</Link></button>
+
+					</div>
 
 					<p className="loginby">Войти с помощью</p>
 

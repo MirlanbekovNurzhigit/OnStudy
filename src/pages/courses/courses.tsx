@@ -1,6 +1,7 @@
 import CardCourse from '../../components/card-course';
 import TypeCourse from '../../type/courses';
 import '../../styles/pages/courses/courses.scss';
+import '../../styles/pages/courses/courses_media.scss';
 
 interface CoursesProps {
 	data: TypeCourse[];

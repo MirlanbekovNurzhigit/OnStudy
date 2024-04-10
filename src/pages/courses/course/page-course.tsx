@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import gsap from 'gsap';
 import TypeCourse from '../../../type/courses';
-import '../../../styles/pages/courses/course/page-course_media.css';
+import '../../../styles/pages/courses/course/page-course_media.scss'
 import '../../../styles/pages/courses/course/page-course.scss';
 import arrowDown from '../../../images/arrowdown.svg'
 

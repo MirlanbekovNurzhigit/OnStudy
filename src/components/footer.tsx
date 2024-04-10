@@ -1,4 +1,5 @@
 import '../styles/components/footer/footer.scss'
+import '../styles/components/footer/footer_media.scss'
 
 function Footer() {
 	return (
