@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-route
 import Header from './components/header';
 import Footer from './components/footer';
 import Home from './pages/home/home';
-import About_onstudy from './pages/about_onstudy/about_onstudy';
+import AboutOnstudy from './pages/about_onstudy/about_onstudy';
 import Courses from './pages/courses/courses';
 import Login from './pages/register&singin/login';
 import Register from './pages/register&singin/register';
@@ -39,13 +39,13 @@ function App() {
 				<Route path="/" element={<Home />} />
 				<Route path="/courses" element={<Courses />} />
 				<Route path="/course/:name/:id" element={<PageCourse />} />
-				<Route path="/about-OnStudy" element={<About_onstudy />} />
+				<Route path="/about-OnStudy" element={<AboutOnstudy />} />
 				<Route path="/adminkaasdsafdgfassd" element={<Admin />} />
 				<Route path="/user" element={<Profiel />} />
 
 				{/* will edit */}
 				<Route path="/login" element={<Login />} />
-				<Route path="/firstsingin" element={<Register />} />
+				<Route path="/register" element={<Register />} />
 
 				{/* will edit */}
 				<Route path="/singin" element={<Singin />} />

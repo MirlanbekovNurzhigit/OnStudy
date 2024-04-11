@@ -1,10 +1,116 @@
 {
-	"users": [
-		{
-			"email": "misterpusistyestany@gmail.com",
-			"firstName": "Chief",
-			"lastName": "Keef",
-			"password": "1234qwer"
-		}
-	]
+  "users": [
+    {
+      "email": "misterpusistyestany@gmail.com",
+      "firstName": "Chief",
+      "lastName": "Keef",
+      "password": "1234qwer",
+      "id": "019d"
+    },
+    {
+      "email": "aelita@gmail.com",
+      "firstName": "Chief",
+      "lastName": "Keef",
+      "password": "123456",
+      "id": "3f68"
+    },
+    {
+      "id": "cae1",
+      "email": "aelita@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "6ff5"
+    },
+    {
+      "id": "4809",
+      "email": "aelita@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "4af3",
+      "email": "aelita@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "23af",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "4f00",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "9ac3",
+      "email": "aelita",
+      "password": ""
+    },
+    {
+      "id": "06b8",
+      "email": "aelita@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "f504",
+      "email": "aelita@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "c655",
+      "email": "aelita@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "a2f7",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "f271",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "7530",
+      "email": "aelita@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "7e04",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "80b0",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "4176",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "9003",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "8a7e",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "cfb6",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "6a98",
+      "email": "",
+      "password": ""
+    }
+  ]
 }
