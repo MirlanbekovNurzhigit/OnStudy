@@ -1,5 +1,6 @@
 .page__course {
-	margin-top: calc(var(--index) * 7);
+	padding-top: calc(var(--index) * 7);
+	height: 100vh;
 
 	.page__course-main {
 		.row {
@@ -9,16 +10,16 @@
 			.page__course-main-left {
 
 				.page__course-main-left-card {
+					padding: calc(var(--index) * 1.25);
+					background: #8844F7;
+					border-radius: calc(var(--index) * .5);
 
 					.page__course-main-left-card-box {
 						display: flex;
 						justify-content: space-between;
 
 						.page__course-main-left-card-left {
-							width: calc(var(--index) * 20);
-							padding: calc(var(--index) * 1.25);
-							background: #8844F7;
-							border-radius: calc(var(--index) * .5);
+							width: calc(var(--index) * 13);
 
 							.page__course-main-left-card-name {
 								color: #4A16A1;
@@ -30,6 +31,12 @@
 								color: #BD97FB;
 								font-size: calc(var(--index) * .65);
 							}
+						}
+
+						.page__course-main-left-card-right {
+							overflow: hidden;
+							width: calc(var(--index) * 4);
+							height: calc(var(--index) * 4);
 						}
 					}
 				}
@@ -69,6 +76,7 @@
 					display: flex;
 					flex-wrap: wrap;
 					gap: calc(var(--index) * 1) calc(var(--index) * .9);
+					transition: var(--transition);
 
 					.video {
 						width: calc(var(--index) * 14.5);

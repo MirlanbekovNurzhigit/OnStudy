@@ -1,8 +1,8 @@
 interface TypeUsers {
 	email: string,
-	firstName: string,
-	lastName: string,
+	name: string,
 	password: string,
+	coursesBought: [string],
 	id: any
 }
 

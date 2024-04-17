@@ -1,21 +1,21 @@
-import '../../styles/pages/home/home.scss'
 import Hero from '../../components/hero';
-import About_us from './sections/about_us';
-import Popular_courses from './sections/popular_courses';
+import About_us from './sections/AboutUs';
+import Popular_courses from './sections/PopularCourses';
 import Mentors from './sections/mentors';
 import Choice from './sections/choice';
 import Statistics from './sections/statistics';
 import TypeCourse from '../../type/courses';
 import TypeMentors from '../../type/mentors';
+import '../../styles/pages/home/home.scss';
 
-interface StatisticsProps {
+interface HomeProps {
 	coursesCount: number;
 	coursesData: TypeCourse[];
 	mentorsData: TypeMentors[];
-	usersCount: number
+	usersCount: number;
 }
 
-function Home({ coursesCount, coursesData, mentorsData, usersCount }: StatisticsProps) {
+function Home({ coursesCount, coursesData, mentorsData, usersCount }: HomeProps) {
 	return (
 		<main>
 			<Hero />
@@ -24,7 +24,6 @@ function Home({ coursesCount, coursesData, mentorsData, usersCount }: Statistics
 			<Popular_courses coursesData={coursesData} />
 			<Choice />
 			<Mentors mentorsData={mentorsData} />
-			{/* edit mentors */}
 		</main>
 	);
 }

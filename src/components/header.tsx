@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
-import '../styles/components/header/header.scss'
-import '../styles/components/header/header_media.css'
-import Logo from '../images/WhiteLogo.svg'
 import { Link } from 'react-router-dom';
+import Logo from '../images/WhiteLogo.svg';
+import '../styles/components/header/header.scss';
+import '../styles/components/header/header_media.css';
 
 function Header() {
 	useEffect(() => {
@@ -18,7 +18,7 @@ function Header() {
 			}
 		};
 
-		const closeMenu = (e: Event) => {
+		const closeMenu = (e: any) => {
 			if (menu && menuBtn && e.target instanceof HTMLElement && e.target.classList.contains('menu__body')) {
 				menu.classList.remove('active');
 				menuBtn.classList.remove('active');
@@ -36,9 +36,9 @@ function Header() {
 
 		const anchors = document.querySelectorAll('a[href*="#"]');
 
-		const scrollHandler = (event: Event) => {
+		const scrollHandler = (event: any) => {
 			event.preventDefault();
-			const anchor = event.target as HTMLElement;
+			const anchor = event.target;
 			const blockID = anchor.getAttribute('href')?.substring(1);
 			const targetBlock = document.getElementById(blockID || '');
 
@@ -80,9 +80,9 @@ function Header() {
 					</Link>
 					<div className="menu__body">
 						<ul className="menu__list">
-							<li><Link to="/">Главная</Link></li>
-							<li><Link to="/courses">Курсы</Link></li>
-							<li><Link to="/about-OnStudy">О Нас</Link></li>
+							<li><Link className="menu__link" to="/">Главная</Link></li>
+							<li><Link className="menu__link" to="/courses">Курсы</Link></li>
+							<li><Link className="menu__link" to="/about-OnStudy">О Нас</Link></li>
 						</ul>
 					</div>
 					<div className="header__burger-btn">

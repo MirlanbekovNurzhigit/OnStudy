@@ -1,12 +1,12 @@
 interface TypeCourse {
+	id: any,
 	name: string;
 	type: string;
 	price: string;
 	image: string;
-	videocount: number;
-	ctgrs: [
+	categories: [
 		{
-			ctgrName: string,
+			name: string,
 			videos: [
 				{
 					name: string;
@@ -17,7 +17,6 @@ interface TypeCourse {
 			]
 		}
 	],
-	id: any
 }
 
 export default TypeCourse;

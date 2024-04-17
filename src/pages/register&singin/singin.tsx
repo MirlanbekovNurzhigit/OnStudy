@@ -1,35 +1,114 @@
-import '../../styles/pages/register&login/singin/singin.scss'
-import '../../styles/pages/register&login/singin/singin_media.css'
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../../images/BlackLogo.svg'
-import Arrow from '../../images/arrow.svg'
+import Logo from '../../images/BlackLogo.svg';
+import Arrow from '../../images/arrow.svg';
+import { registerUser } from '../../aut/registerUser';
+import { checkEmailExists } from '../../aut/checkEmailExists';
+import '../../styles/pages/register&login/singin/singin.scss';
+
+interface UserData {
+	name: string;
+	email: string;
+	password: string;
+	confirmPassword: string;
+}
+
+function checkPasswordsMatch(password: string, confirmPassword: string): boolean {
+	return password === confirmPassword;
+}
 
 function SingIn() {
+	const [userData, setUserData] = useState<UserData>({ name: '', email: '', password: '', confirmPassword: '' });
+	const [error, setError] = useState<string | null>(null);
+
+	const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+		const { name, value } = e.target;
+		setUserData(prevState => ({ ...prevState, [name]: value }));
+	};
+
+	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+		e.preventDefault();
+		try {
+			const emailExists = await checkEmailExists(userData.email);
+			if (emailExists) {
+				setError('Email уже используется');
+				return;
+			}
+
+			if (!checkPasswordsMatch(userData.password, userData.confirmPassword)) {
+				setError('Пароли не совпадают');
+				return;
+			}
+
+			const { confirmPassword, ...userDataWithoutConfirmPassword } = userData;
+
+			const response = await registerUser(userDataWithoutConfirmPassword);
+			console.log('Registered successfully:', response);
+
+			window.location.href = `/profile/${userData.name}`;
+		} catch (error: any) {
+			setError(error.message);
+		}
+	};
+
 	return (
 		<main className='singin__main'>
 			<section className='singin'>
 				<div className="form">
-					<form action="">
-						<Link to="/firstsingin"><img className="arrow" src={Arrow} alt="arrow" /></Link>
+					<form onSubmit={handleSubmit}>
+						<Link to="/login"><img className="arrow" src={Arrow} alt="arrow" /></Link>
 						<div className="logo__block">
 							<img className="logo" src={Logo} alt="logo" />
 							<h2 className="singin__title">Регистрация</h2>
 						</div>
 						<div className="input__box">
 							<div className="input__block">
-								<input className="singin__input" type="text" placeholder="Имя" required />
+								<input
+									className="singin__input"
+									type="text"
+									placeholder="Имя"
+									name="name"
+									value={userData.name}
+									onChange={handleChange}
+									required
+								/>
 							</div>
 							<div className="input__block">
-								<input className="singin__input" type="text" placeholder="Фамилия" required />
+								<input
+									className="singin__input"
+									type="email"
+									placeholder="Электронная почта"
+									name="email"
+									value={userData.email}
+									onChange={handleChange}
+									required
+								/>
 							</div>
 							<div className="input__block">
-								<input className="singin__input" type="password" placeholder="Пароль" required />
+								<input
+									className="singin__input"
+									type="password"
+									placeholder="Пароль"
+									name="password"
+									value={userData.password}
+									onChange={handleChange}
+									required
+								/>
 							</div>
 							<div className="input__block">
-								<input className="singin__input" type="password" placeholder='Повторите пароль' required />
+								<input
+									className="singin__input"
+									type="password"
+									placeholder="Повторите пароль"
+									name="confirmPassword"
+									value={userData.confirmPassword}
+									onChange={handleChange}
+									required
+								/>
 							</div>
 						</div>
-						<button className="singin__button">Войти</button>
+						{error && <p className="password__error">{error}</p>}
+						<button type="submit" className="singin__button">Регистрация</button>
 					</form>
 					<p className="offer">Нажимая на кнопку, я принимаю оферу и соглашаюсь на обработку персональных данных</p>
 					<p className="haveaccaunt">Уже есть аккаунт? <Link to="/login">Войдите</Link></p>

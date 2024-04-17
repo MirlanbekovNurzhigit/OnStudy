@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import './admin.scss'
 import TypeCourse from "../type/courses";
 import TypeUsers from "../type/users";
+import './admin.scss'
 
 interface Video {
 	name: string;
@@ -25,16 +25,15 @@ interface Course {
 	categories: Category[];
 }
 
-interface User {
-	id: number;
-	name: string;
+function generateUniqueId(): number {
+	return Math.floor(Math.random() * Date.now());
 }
 
 function Admin() {
 	const [users, setUsers] = useState<TypeUsers[]>([]);
 	const [courses, setCourses] = useState<TypeCourse[]>([]);
 	const [newCourse, setNewCourse] = useState<Course>({
-		id: 0,
+		id: generateUniqueId(),
 		name: "",
 		type: "",
 		price: "",
@@ -69,16 +68,16 @@ function Admin() {
 		try {
 			await axios.post("http://localhost:8000/courses", newCourse);
 			alert("Course added successfully!");
-			// Clear the form after successfully adding the course
+
 			setNewCourse({
-				id: 0,
+				id: generateUniqueId(),
 				name: "",
 				type: "",
 				price: "",
 				image: "",
 				categories: [{ name: "", videos: [{ name: "", duration: "", url: "", image: "" }] }]
 			});
-			// Fetch courses again to update the list
+
 			fetchCourses();
 		} catch (error) {
 			console.error("Error adding course:", error);
@@ -243,7 +242,7 @@ function Admin() {
 				<ul className="users">
 					{users.map(user => (
 						<li className="user" key={user.id}>
-							<p className="user__name">{`${user.firstName} ${user.lastName}#${user.id}`}</p>
+							<p className="user__name">{`${user.name}#${user.id}`}</p>
 							<button className="delete__button" onClick={() => deleteUser(user.id)}>DELETE</button>
 						</li>
 					))}

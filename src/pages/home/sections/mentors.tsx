@@ -1,6 +1,6 @@
 import '../../../styles/pages/home/sections/mentors/mentors.scss'
 import '../../../styles/pages/home/sections/mentors/mentors_media.css'
-import MentorCard from '../../../components/mentor-card';
+import MentorCard from '../../../components/MentorCard';
 import TypeMentors from '../../../type/mentors';
 
 interface MentorsProps {
@@ -12,7 +12,7 @@ function Mentors({ mentorsData }: MentorsProps) {
 		<section className="mentors">
 			<div className="container">
 				<div className="text__content">
-					<h2 className="mentors__title">Наши менторы</h2>
+					<h2 className="mentors__title title__font">Наши менторы</h2>
 					<p className="mentors__text">
 						Получите руководство от увлеченных и опытных профессионалов.
 					</p>

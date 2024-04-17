@@ -37,7 +37,7 @@
 				flex-wrap: wrap;
 				justify-content: center;
 				row-gap: calc(var(--index) * .6);
-				margin: calc(var(--index) * 1.4) 0 calc(var(--index) * .9);
+				margin: calc(var(--index) * 1.4) 0 0;
 
 				.singin__input {
 					width: calc(var(--index) * 14.8);
@@ -53,6 +53,11 @@
 				.singin__input:focus {
 					box-shadow: 0 0 calc(var(--index) * .3) #d3d3d3;
 				}
+			}
+
+			.password__error {
+				margin: calc(var(--index) * .7) 0 calc(var(--index) * .6);
+				color: #d11a1a;
 			}
 
 			.singin__button {

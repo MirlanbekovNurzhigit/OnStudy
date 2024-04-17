@@ -1,7 +1,7 @@
-import '../../styles/pages/register&login/login/login.scss'
-import '../../styles/pages/register&login/login/login_media.css'
 import { Link } from 'react-router-dom';
 import Logo from '../../images/BlackLogo.svg'
+import '../../styles/pages/register&login/login/login.scss'
+import '../../styles/pages/register&login/login/login_media.css'
 
 function LogIn() {
 	return (
@@ -38,17 +38,8 @@ function LogIn() {
 					</form>
 
 					<div className="login__btn">
-						<button className="button"><Link to="/firstsingin">Создать профиль</Link></button>
+						<button className="button"><Link to="/register">Создать профиль</Link></button>
 
-					</div>
-
-					<p className="loginby">Войти с помощью</p>
-
-					<div className="bysocial">
-						<div className="social"></div>
-						<div className="social"></div>
-						<div className="social"></div>
-						<div className="social"></div>
 					</div>
 
 				</div>

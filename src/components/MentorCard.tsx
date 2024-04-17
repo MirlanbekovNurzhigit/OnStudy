@@ -1,9 +1,8 @@
 import '../styles/components/mentor-course/mentor-course.scss';
-import mentorImg from '../images/mentor.png';
 import TypeMentors from '../type/mentors';
 
 interface CardMentorProps {
-	mentor: TypeMentors
+	mentor: TypeMentors;
 }
 
 function MentorCard({ mentor }: CardMentorProps) {
@@ -20,6 +19,6 @@ function MentorCard({ mentor }: CardMentorProps) {
 			</div>
 		</div>
 	);
-}
+};
 
 export default MentorCard;

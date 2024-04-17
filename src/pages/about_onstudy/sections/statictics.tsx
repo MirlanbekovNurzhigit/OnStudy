@@ -1,8 +1,8 @@
-import '../../../styles/pages/about_onstudy/sections/statictics/statictics.scss'
-import '../../../styles/pages/about_onstudy/sections/statictics/statictics_media.css'
 import students from '../../../images/Students.svg'
 import courses from '../../../images/Courses.svg'
 import reviews from '../../../images/Reviews.svg'
+import '../../../styles/pages/about_onstudy/sections/statictics/statictics.scss'
+import '../../../styles/pages/about_onstudy/sections/statictics/statictics_media.css'
 
 interface StatisticsProps {
 	coursesCount: number;
