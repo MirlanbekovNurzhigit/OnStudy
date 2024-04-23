@@ -2,17 +2,21 @@
 
 @media (max-width: 1075px) and (min-width: 900px) {
 	.mentors .row .mentor__card {
-		width: calc(var(--index) * 22);
+		width: calc(var(--index) * 24.5);
 	}
 }
 
 @media (max-width: 900px) and (min-width: 768px) {
 	.mentors .row .mentor__card {
-		width: calc(var(--index) * 20);
+		width: calc(var(--index) * 21.5);
 	}
 }
 
 @media (max-width: 768px) and (min-width: 620px) {
+	.mentors .row .mentor__card {
+		width: calc(var(--index) * 19.5);
+	}
+
 	.mentors .text__content .mentors__text {
 		width: calc(var(--index)* 22);
 		font-size: calc(var(--index)* 1.2);

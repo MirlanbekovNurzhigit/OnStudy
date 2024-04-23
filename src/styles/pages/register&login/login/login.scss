@@ -13,6 +13,8 @@
 			padding: calc(var(--index) * 2.5) calc(var(--index) * 2.1) calc(var(--index) * 2.5);
 			background: #fff;
 			border-radius: calc(var(--index) * .5);
+			position: relative;
+			z-index: 2;
 
 
 			.logo__block {
@@ -100,6 +102,56 @@
 					border-radius: 50%;
 					border: 1px solid #E8E8E8;
 				}
+			}
+		}
+
+		.circles {
+			position: relative;
+			top: calc(var(--index) * 19);
+			left: calc(var(--index) * -9.5);
+
+			.small__circle {
+				width: calc(var(--index) * 33);
+				height: calc(var(--index) * 33);
+				border-radius: 50%;
+				background: #AA37F5;
+				position: absolute;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				z-index: 1;
+			}
+
+			.bigger__small-circle {
+				width: calc(var(--index) * 43);
+				height: calc(var(--index) * 43);
+				border-radius: 50%;
+				background: #A13AF6;
+				position: absolute;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				z-index: 1;
+			}
+
+			.big__circle {
+				width: calc(var(--index) * 53);
+				height: calc(var(--index) * 53);
+				border-radius: 50%;
+				background: #973EF7;
+				position: absolute;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				z-index: 1;
+			}
+
+			.bigger__big-circle {
+				width: calc(var(--index) * 63);
+				height: calc(var(--index) * 63);
+				border-radius: 50%;
+				background: #8844F7;
+				position: absolute;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				z-index: 1;
 			}
 		}
 	}

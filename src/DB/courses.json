@@ -61,66 +61,6 @@
       ]
     },
     {
-      "id": "adbc",
-      "name": "English",
-      "type": "Курс",
-      "price": "10.000 Сом",
-      "image": "https://cdn.leonardo.ai/users/97276586-24a1-4456-b730-76645b311e8c/generations/13fbd4f6-6c4e-43a3-aa51-0e1bbe11e87a/Default_photo_RAW_Black_and_gold_Ultra_detail_full_photograph_0.jpg?w=512",
-      "categories": [
-        {
-          "name": "О курсе",
-          "videos": [
-            {
-              "name": "Вводный урок",
-              "videoImage": "link",
-              "duration": "24h",
-              "UrlVideo": "https://www.youtube.com/embed/zecADHk0kJE?si=E8Qnkb12mDd4GFgo"
-            }
-          ]
-        },
-        {
-          "name": "Введение в IELTS",
-          "videos": [
-            {
-              "name": "История IELTS",
-              "videoImage": "link",
-              "duration": "25 мин.",
-              "UrlVideo": "https://www.youtube.com/embed/YosBYK470ww?si=7a20t3-7f4OsXrRW"
-            },
-            {
-              "name": "Жанры и IELTS платформы",
-              "videoImage": "link",
-              "duration": "17 мин.",
-              "UrlVideo": "https://www.youtube.com/embed/i_DFpKZebi8?si=RarFjofX6f7zj755"
-            },
-            {
-              "name": "Актуальное состояние рынка IELTS",
-              "videoImage": "link",
-              "duration": "24 мин.",
-              "UrlVideo": "https://www.youtube.com/embed/i_DFpKZebi8?si=RarFjofX6f7zj755"
-            }
-          ]
-        },
-        {
-          "name": "Визуальная составляющая IELTS",
-          "videos": [
-            {
-              "name": "Концепт-арт в IELTS",
-              "videoImage": "link",
-              "duration": "17 мин.",
-              "UrlVideo": "https://www.youtube.com/embed/5bBUFuB2BaI?si=Jdn-De0WreKNJVo6"
-            },
-            {
-              "name": "3D-моделирование в IELTS",
-              "videoImage": "link",
-              "duration": "16 мин.",
-              "UrlVideo": "https://www.youtube.com/embed/5NBqbUUB1Pk?si=CxMzk5kvZ5S0UKns"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "bdec",
       "name": "Как учиться в OnStudy. Курс-знакомство",
       "type": "Курс",
@@ -147,6 +87,26 @@
               "videoImage": "link",
               "duration": "24h",
               "UrlVideo": "https://www.youtube.com/embed/zecADHk0kJE?si=E8Qnkb12mDd4GFgo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1080800925108,
+      "name": "ASASAS",
+      "type": "asa",
+      "price": "sdasdsa",
+      "image": "dasdas",
+      "categories": [
+        {
+          "name": "dasdasd",
+          "videos": [
+            {
+              "name": "adsasdsa",
+              "duration": "dasda",
+              "url": "dasdasd",
+              "image": "asdasdasd"
             }
           ]
         }

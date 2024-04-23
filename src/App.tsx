@@ -41,7 +41,7 @@ function useData() {
 				setUsersCount(usersResponse.data.length);
 				setLoading(false);
 			} catch (error) {
-				console.error('Error fetching data:', error);
+				console.error('Ошибка получения данных:', error);
 			}
 		};
 
@@ -63,7 +63,7 @@ function App() {
 				<Route path="/" element={<Home coursesCount={coursesCount} usersCount={usersCount} mentorsData={mentorsData} coursesData={coursesData} />} />
 				<Route path="/courses" element={<Courses data={coursesData} />} />
 				<Route path="/course/:name/:id" element={<PageCourse data={coursesData} />} />
-				<Route path="/about-OnStudy" element={<About_onstudy usersCount={usersCount} coursesCount={coursesCount} />} />
+				<Route path="/about-us" element={<About_onstudy usersCount={usersCount} coursesCount={coursesCount} />} />
 				<Route path="/adminkaasdsafdgfassd" element={<Admin />} />
 				<Route path="/profile/:name" element={<Profiel usersData={usersData} coursesData={coursesData} />} />
 				<Route path="/login" element={<Login />} />

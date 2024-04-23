@@ -37,6 +37,7 @@
 							overflow: hidden;
 							width: calc(var(--index) * 4);
 							height: calc(var(--index) * 4);
+							border-radius: calc(var(--index) * .5);
 						}
 					}
 				}

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import TypeCourse from '../../../type/courses';
 import arrowDown from '../../../images/arrowdown.svg';
-import '../../../styles/pages/courses/course/page-course_media.scss';
+import '../../../styles/pages/courses/course/page-course_media.css';
 import '../../../styles/pages/courses/course/page-course.scss';
 
 interface PageCourseProps {

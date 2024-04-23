@@ -43,6 +43,12 @@ function LogIn() {
 					</div>
 
 				</div>
+				<div className="circles">
+					<div className="bigger__big-circle"></div>
+					<div className="big__circle"></div>
+					<div className="bigger__small-circle"></div>
+					<div className="small__circle"></div>
+				</div>
 			</section>
 		</main>
 	);

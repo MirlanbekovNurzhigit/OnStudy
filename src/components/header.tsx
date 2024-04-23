@@ -1,10 +1,43 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { gsap } from 'gsap';
 import Logo from '../images/WhiteLogo.svg';
 import '../styles/components/header/header.scss';
 import '../styles/components/header/header_media.css';
 
 function Header() {
+	useEffect(() => {
+		const header = document.querySelector('.header');
+
+		if (header) {
+			const headerHeight = header.clientHeight;
+
+			gsap.set(header, { y: 0, position: 'fixed', width: '100%', zIndex: 1000, top: 0 });
+
+			let lastScroll = 0;
+
+			const handleScroll = () => {
+				const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+				if (currentScroll > lastScroll) {
+					gsap.to(header, { y: -headerHeight, duration: .1, ease: 'power2.inOut' });
+				} else {
+					gsap.to(header, { y: 0, duration: .1, ease: 'power2.inOut' });
+				}
+				lastScroll = currentScroll <= 0 ? 0 : currentScroll;
+			};
+
+			window.addEventListener('scroll', handleScroll);
+
+			return () => {
+				window.removeEventListener('scroll', handleScroll);
+			};
+		}
+	}, []);
+
+	const handleClick = () => {
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+	};
+
 	useEffect(() => {
 		const menu = document.querySelector('.menu__body');
 		const menuBtn = document.querySelector('.menu__icon');
@@ -80,9 +113,9 @@ function Header() {
 					</Link>
 					<div className="menu__body">
 						<ul className="menu__list">
-							<li><Link className="menu__link" to="/">Главная</Link></li>
-							<li><Link className="menu__link" to="/courses">Курсы</Link></li>
-							<li><Link className="menu__link" to="/about-OnStudy">О Нас</Link></li>
+							<li><Link className="menu__link" onClick={handleClick} to="/">Главная</Link></li>
+							<li><Link className="menu__link" onClick={handleClick} to="/courses">Курсы</Link></li>
+							<li><Link className="menu__link" onClick={handleClick} to="/about-us">О Нас</Link></li>
 						</ul>
 					</div>
 					<div className="header__burger-btn">

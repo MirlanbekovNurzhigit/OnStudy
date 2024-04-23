@@ -33,6 +33,7 @@
 
 	.choice .box__flex .choice__text {
 		width: 100%;
+		font-size: calc(var(--index)* 1.3);
 	}
 
 	.choice .box__flex .choice__text:first-child {

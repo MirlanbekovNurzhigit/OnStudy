@@ -4,8 +4,13 @@
 	background: #724CF9;
 	top: 0;
 	left: 0;
-	z-index: 10;
 	width: 100%;
+	z-index: 1000;
+	transition: transform 0.5s ease;
+
+	.fixed {
+		transform: translateY(-100%);
+	}
 
 	.nav {
 		display: flex;
